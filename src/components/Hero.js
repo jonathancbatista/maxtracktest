@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import logo from '../logo.svg';
 
@@ -15,11 +16,11 @@ class Hero extends Component {
     return (
       <section className="section hero is-light">
         <div className="container content">
-          <h1 className="title">
+          <Link exact to ="/" className="title">
             <figure className="image">
               <Img src={logo} alt="The Movie Data Base" />
             </figure>
-          </h1>
+          </Link>
           <h2 className="subtitle is-4">
             Explore a maior base de Filmes e Séries do mundo.
           </h2>
