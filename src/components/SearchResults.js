@@ -25,7 +25,7 @@ class SearchResults extends Component {
     })
 
     return (
-      <section className="section">
+      <section className="section container content">
         { resultsList }
       </section>
     )
