@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import tmdb from '../apis/tmdb.js'
-import { tmdbParams } from '../apis/tmdb.js'
-import axios from 'axios'
+import tmdb, {tmdbParams} from '../apis/tmdb.js'
 
 class HomeSearch extends Component {
 

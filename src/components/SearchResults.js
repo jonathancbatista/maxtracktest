@@ -17,7 +17,9 @@ class SearchResults extends Component {
         mediaAlt: film.displayTitle + " Poster",
         mediaTitle: film.displayTitle,
         mediaSubtitle: film.media_type,
-        mediaContent: film.overview
+        mediaContent: film.overview,
+        mediaLink: "/" + film.media_type + "/" +film.id,
+
       }
 
       return <Media mediaData={mediaData} key={index} />

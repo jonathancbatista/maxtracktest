@@ -1,40 +1,24 @@
 import React, { Component } from 'react';
-import Hero from "./components/Hero.js"
-import HomeSearch from "./components/HomeSearch.js"
-import SearchResults from "./components/SearchResults.js"
+import { Switch, Route } from 'react-router-dom'
 import './App.css';
 
-class App extends Component {
-	constructor(props) {
-    super(props);
-    this.handleHomeSubmit = this.handleHomeSubmit.bind(this);
-    this.state = {
-			loading: false,
-			error: null,
-			films: [],
-		}
-  }
-	// state = {
-	// 	loading: false,
-	// 	error: null,
-	// 	films: [],
-	// }
+import Home from './components/Home.js'
+import Movie from './components/Movie.js'
+import Tv from './components/Tv.js'
+import Person from './components/Person.js'
 
-	handleHomeSubmit(data) {
-	  this.setState({ films: data })
-	}
+class App extends Component {
 
   render() {
-
-  	const { films } = this.state
-
     return (
       <div className="App">
-        <Hero />
 
-        <HomeSearch handleSubmit={ this.handleHomeSubmit } />
-
-        <SearchResults filmData={ films }  />
+	      <Switch>
+	        <Route exact path="/" component={Home} />
+	        <Route path="/movie/:id" component={Movie} />
+	        <Route path="/tv/:id" component={Tv} />
+	        <Route path="/person/:id" component={Person} />
+	      </Switch>
 
       </div>
     )
