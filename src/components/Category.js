@@ -15,7 +15,7 @@ function SwitchCategory(props) {
       return<Tv data={props.data} isLoading={props.isLoading} />
 
     case 'person':
-      return <Person data={props.data} isLoading={props.isLoading} />
+      return <Person data={props.data} isLoading={props.isLoading} lastMovie={props.lastMovie} />
 
     default:
       alert('Ocorreu um erro')
@@ -55,6 +55,39 @@ class Category extends Component {
 
       response.data.poster_url = posterURL
 
+      if (this.state.category === "person") {
+        tmdb.get(`person/${this.state.id}/movie_credits`, {
+          params: {
+            ...tmdbParams,
+          }
+        })
+        .then( response => {
+          lastMovie = response.data.cast.reduce((el1, el2 ) => {
+            if (Date.parse(el1.release_date) > Date.parse(el2.release_date)) {
+              return el1
+            }
+            return el2
+          })
+
+          // console.log(lastMovie)
+
+          this.setState({
+            ...this.state, ...{
+              last_movie: { ...lastMovie }
+            }
+          })
+
+        })
+        .catch (error => {
+          alert("ocorreu um erro")
+          console.log(error)
+        })
+      }
+
+      // response.data.last_movie = lastMovie
+
+      // console.log(response.data.last_movie)
+
       this.setState({
         ...this.state, ...{
           isLoading: false,
@@ -78,7 +111,7 @@ class Category extends Component {
     return (
       <div>
         <Navbar />
-        <SwitchCategory category={this.state.category} data={this.state.data} isLoading={this.state.isLoading} />
+        <SwitchCategory category={this.state.category} data={this.state.data} isLoading={this.state.isLoading} lastMovie={this.state.last_movie} />
       </div>
     )
   }

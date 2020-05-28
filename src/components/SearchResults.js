@@ -14,11 +14,11 @@ class SearchResults extends Component {
 
       const mediaData = {
         mediaImg:  film.img,
-        mediaAlt: film.displayTitle + " Poster",
+        mediaAlt: `${film.displayTitle} Poster`,
         mediaTitle: film.displayTitle,
         mediaSubtitle: film.media_type,
         mediaContent: film.overview,
-        mediaLink: "/" + film.media_type + "/" +film.id,
+        mediaLink: `/${film.media_type}/${film.id}`,
 
       }
 

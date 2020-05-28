@@ -8,12 +8,6 @@ export const tmdbParams = {
 
 const tmdb = axios.create({
       baseURL: "https://api.themoviedb.org/3/",
-      // headers: {
-      //   "Content-Type": 'application/json;charset=UTF-8',
-      //   "Access-Control-Allow-Origin": "*"
-      // },
-      // withCredentials: false,
-      
     })
 
 
