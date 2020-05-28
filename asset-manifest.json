@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/maxtracktest/static/css/main.9f8bdd2b.chunk.css",
-    "main.js": "/maxtracktest/static/js/main.3976a47f.chunk.js",
-    "main.js.map": "/maxtracktest/static/js/main.3976a47f.chunk.js.map",
+    "main.js": "/maxtracktest/static/js/main.6877c3c0.chunk.js",
+    "main.js.map": "/maxtracktest/static/js/main.6877c3c0.chunk.js.map",
     "runtime-main.js": "/maxtracktest/static/js/runtime-main.ec5379eb.js",
     "runtime-main.js.map": "/maxtracktest/static/js/runtime-main.ec5379eb.js.map",
     "static/js/2.281c12aa.chunk.js": "/maxtracktest/static/js/2.281c12aa.chunk.js",
     "static/js/2.281c12aa.chunk.js.map": "/maxtracktest/static/js/2.281c12aa.chunk.js.map",
     "index.html": "/maxtracktest/index.html",
-    "precache-manifest.28c1ad2d3e4730f34f0f893bce7223e0.js": "/maxtracktest/precache-manifest.28c1ad2d3e4730f34f0f893bce7223e0.js",
+    "precache-manifest.0ad92fbeddeafb760826ba497c2cb5f8.js": "/maxtracktest/precache-manifest.0ad92fbeddeafb760826ba497c2cb5f8.js",
     "service-worker.js": "/maxtracktest/service-worker.js",
     "static/css/main.9f8bdd2b.chunk.css.map": "/maxtracktest/static/css/main.9f8bdd2b.chunk.css.map",
     "static/js/2.281c12aa.chunk.js.LICENSE.txt": "/maxtracktest/static/js/2.281c12aa.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.ec5379eb.js",
     "static/js/2.281c12aa.chunk.js",
     "static/css/main.9f8bdd2b.chunk.css",
-    "static/js/main.3976a47f.chunk.js"
+    "static/js/main.6877c3c0.chunk.js"
   ]
 }

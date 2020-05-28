@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "deabb31e2bbe516080022b42fae5104b",
+    "revision": "6ac7b36eca753582d3d13bc5a7a7d3bc",
     "url": "/maxtracktest/index.html"
   },
   {
-    "revision": "2600f1ffa30c3b429caa",
+    "revision": "4523393df2cddd72453d",
     "url": "/maxtracktest/static/css/main.9f8bdd2b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/maxtracktest/static/js/2.281c12aa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2600f1ffa30c3b429caa",
-    "url": "/maxtracktest/static/js/main.3976a47f.chunk.js"
+    "revision": "4523393df2cddd72453d",
+    "url": "/maxtracktest/static/js/main.6877c3c0.chunk.js"
   },
   {
     "revision": "74899517b0bbc255b971",
