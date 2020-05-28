@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Media from './Media.js'
+import unavailable from '../media/unavailable.jpg'
 
 class SearchResults extends Component {
 
@@ -9,7 +10,7 @@ class SearchResults extends Component {
 
     const resultsList = filmData.map((film, index) => {
 
-      film.img = (film.poster_path || film.profile_path) ? "https://image.tmdb.org/t/p/w92" + (film.poster_path || film.profile_path) : `${process.env.PUBLIC_URL}/unavailable.jpg`
+      film.img = (film.poster_path || film.profile_path) ? "https://image.tmdb.org/t/p/w92" + (film.poster_path || film.profile_path) : unavailable
       film.displayTitle = film.title || film.name
 
       const mediaData = {
