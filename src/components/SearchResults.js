@@ -9,7 +9,7 @@ class SearchResults extends Component {
 
     const resultsList = filmData.map((film, index) => {
 
-      film.img = (film.poster_path || film.profile_path) ? "https://image.tmdb.org/t/p/w92" + (film.poster_path || film.profile_path) : "/unavailable.jpg"
+      film.img = (film.poster_path || film.profile_path) ? "https://image.tmdb.org/t/p/w92" + (film.poster_path || film.profile_path) : `${process.env.PUBLIC_URL}/unavailable.jpg`
       film.displayTitle = film.title || film.name
 
       const mediaData = {

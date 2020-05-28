@@ -52,7 +52,7 @@ class Category extends Component {
     })
     .then( response => {
       posterOrProfile = response.data.poster_path || response.data.profile_path
-      posterURL = (posterOrProfile) ? `https://image.tmdb.org/t/p/w500${posterOrProfile}` : "/unavailable.jpg"
+      posterURL = (posterOrProfile) ? `https://image.tmdb.org/t/p/w500${posterOrProfile}` : `${process.env.PUBLIC_URL}/unavailable.jpg`
 
       response.data.poster_url = posterURL
 
