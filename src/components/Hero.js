@@ -16,7 +16,7 @@ class Hero extends Component {
     return (
       <section className="section hero is-light">
         <div className="container content">
-          <Link exact to ="/" className="title">
+          <Link to ="/" className="title">
             <figure className="image">
               <Img src={logo} alt="The Movie Data Base" />
             </figure>

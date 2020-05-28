@@ -6,7 +6,6 @@ import Home from './components/Home.js'
 import Category from './components/Category.js'
 
 class App extends Component {
-
   render() {
     return (
       <div className="App">

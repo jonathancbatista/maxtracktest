@@ -19,7 +19,7 @@ class Movie extends Component {
       <section className="section columns container">
         <div className="column is-1-4">
           <figure>
-            <Img src={data.poster_url} alt={data.title} />
+            <Img src={data.poster_url} alt={data.title} className="is-pulled-right" />
           </figure>
         </div>
 

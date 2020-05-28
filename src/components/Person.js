@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import Loading from './Loading.js'
 import styled from 'styled-components'
+
+//{!lastMovie ? "" : <Link to={ `/movie/${lastMovie.id}`}>{lastMovie.original_title}</Link> }
 
 const Img = styled.img`
   min-width:300px;
@@ -36,7 +38,10 @@ class Person extends Component {
         <div className="column is-1-4 content">
           <h2>{data.name}</h2>
           <p><b>Idade:</b> {age}</p>
-          <p><b>Último filme:</b> <Link to={ lastMovie && `/movie/${lastMovie.id}`}>{lastMovie && lastMovie.original_title}</Link></p>
+          <p><b>Último filme:</b>
+          {lastMovie && lastMovie.original_title}
+
+          </p>
         </div>
       </section>
     )

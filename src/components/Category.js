@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import tmdb, {tmdbParams} from '../apis/tmdb.js'
 
 import Movie from './Movie.js'
@@ -63,13 +64,8 @@ class Category extends Component {
         })
         .then( response => {
           lastMovie = response.data.cast.reduce((el1, el2 ) => {
-            if (Date.parse(el1.release_date) > Date.parse(el2.release_date)) {
-              return el1
-            }
-            return el2
+            return (Date.parse(el1.release_date) > Date.parse(el2.release_date)) ? el1 : el2
           })
-
-          // console.log(lastMovie)
 
           this.setState({
             ...this.state, ...{
@@ -83,10 +79,6 @@ class Category extends Component {
           console.log(error)
         })
       }
-
-      // response.data.last_movie = lastMovie
-
-      // console.log(response.data.last_movie)
 
       this.setState({
         ...this.state, ...{
@@ -104,10 +96,10 @@ class Category extends Component {
         }
       })
     });
-
   }
 
   render() {
+    if (true) {}
     return (
       <div>
         <Navbar />
@@ -117,4 +109,4 @@ class Category extends Component {
   }
 }
 
-export default Category;
+export default withRouter(Category);
