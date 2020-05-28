@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Hero from "./Hero.js"
 import HomeSearch from "./HomeSearch.js"
 import SearchResults from "./SearchResults.js"
@@ -24,7 +24,7 @@ class Home extends Component {
   	const { films } = this.state
 
     return (
-      <div className="home">
+      <Fragment>
       
         <Hero />
 
@@ -32,7 +32,7 @@ class Home extends Component {
 
         <SearchResults filmData={ films }  />
 
-      </div>
+      </Fragment>
     )
   }
 }
