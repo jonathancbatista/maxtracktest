@@ -31,7 +31,7 @@ class Person extends Component {
       <section className="section columns container">
         <div className="column is-1-4">
           <figure>
-            <Img src={data.poster_url} alt={data.name} />
+            <Img src={data.poster_url} alt={data.name} className="is-pulled-right" />
           </figure>
         </div>
 

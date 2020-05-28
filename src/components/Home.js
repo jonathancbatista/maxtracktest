@@ -3,7 +3,6 @@ import Hero from "./Hero.js"
 import HomeSearch from "./HomeSearch.js"
 import SearchResults from "./SearchResults.js"
 
-
 class Home extends Component {
 	constructor(props) {
     super(props);
@@ -20,6 +19,7 @@ class Home extends Component {
 	}
 
   render() {
+
 
   	const { films } = this.state
 
